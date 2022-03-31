@@ -2099,8 +2099,7 @@ footer > .container > .links > div:hover > a {
   color: #ffff;
 }
 /* //box3 */
-footer > .container > .footinfo {
-}
+
 footer > .container > .footinfo > div {
   display: flex;
   align-items: center;
@@ -2140,3 +2139,32 @@ footer > center {
   border-top: thin solid var(--main-color);
 }
 /* End footer */
+
+/* button to up  */
+.backtoup {
+  position: fixed;
+  top: 80%;
+  right: -5%;
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #9c27b0d1, #e91e63cc);
+  outline: none;
+  border: thin solid #9e9e9e;
+  border-radius: 22%;
+  padding: 11px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: bouncing 2.5s infinite;
+  cursor: pointer;
+}
+
+.btnShow {
+  transition: all 0.5s;
+  right: 1%;
+  opacity: 1;
+}
+/* button to up  */

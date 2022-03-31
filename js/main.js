@@ -148,3 +148,20 @@ FormDiscount.onsubmit = function (e) {
   }
 };
 //End Discount
+
+//  button to up
+let BtnToUp = document.querySelector(".backtoup");
+window.addEventListener("scroll", function () {
+  if (this.scrollY >= 1500) {
+    BtnToUp.classList.add("btnShow");
+  } else {
+    BtnToUp.classList.remove("btnShow");
+  }
+});
+
+BtnToUp.addEventListener("click", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 500);
+});
+//  button to up
